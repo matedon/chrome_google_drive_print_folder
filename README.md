@@ -1,5 +1,6 @@
-# chrome_extension_boilerplate
-A boilerplate for building chrome extension with HTML, CSS, JS (included, jQuery, Bootstrap)
+# Chromium Extensions for Google Drive
+This extension is good for:
+* Open more documents at once in a Google Drive Folder
+* Invoke Print dialog on all opened tabs (1)
 
-If you want to learn how to setup use/install this boilerplate then then follow this simple instructional content :)
-https://www.maketecheasier.com/create-chrome-extension/
+(1) Under developement.
