@@ -11,17 +11,17 @@ $(function () {
     var console = optionsPage.console;
   }
 
-  $('#open_all').on('click', function () {
-    chrome.tabs.executeScript(null, {file: "js/jquery.min.js"}, function () {
-      chrome.tabs.executeScript(null, {file: "js/jquery.open-docs.js"})
-    })
-  })
-
   $('#open_root').on('click', function () {
     chrome.tabs.executeScript(null, {file: "js/jquery.min.js"}, function () {
       chrome.tabs.executeScript(null, {file: "js/dics_files.js"}, function () {
         chrome.tabs.executeScript(null, {file: "js/jquery.open-docs.js"})
       })
+    })
+  })
+
+  $('#open_all').on('click', function () {
+    chrome.tabs.executeScript(null, {file: "js/jquery.min.js"}, function () {
+      chrome.tabs.executeScript(null, {file: "js/jquery.open-docs.js"})
     })
   })
 
