@@ -4,29 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="css/style.css" media="screen">
-    <title>You are gonna Popup on CHrome</title>
+    <title>Google Drive Print Folder</title>
 </head>
 <body>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <button id="open_all">Open all docs</button>
-            </div>
-            <div class="col-4">
-                <button id="print_all_tabs">Print all tabs!</button>
-            </div>
-            <div class="col-4">
-                <button id="cycle_tabs">Cycle tabs</button>
-            </div>
-        </div>
-    </div>
+<button id="open_root">
+    <div class="icon"><img src="img/folder.svg" /></div>
+    <label>Open docs<br /><small>in the folder's root</small></label>
+</button>
+<button id="open_all">
+    <div class="icon"><img src="img/folder-open.svg" /></div>
+    <label>Open all<br /><small>docs and folders</small></label>
+</button>
+<button id="print_all_tabs">
+    <div class="icon"><img src="img/print.svg" /></div>
+    <label>Print all tabs!<br /><small>from this tab to the last one</small></label>
+</button>
 
-    <!-- div.conta -->
-
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/popup.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/popup.js"></script>
 </body>
 </html>

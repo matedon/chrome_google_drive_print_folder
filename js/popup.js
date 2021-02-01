@@ -11,15 +11,17 @@ $(function () {
     var console = optionsPage.console;
   }
 
-  $('#cycle_tabs').on('click', function () {
-    chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
-      ext.func.cycleTabs(tabs[0], 1000)
-    });
-  })
-
   $('#open_all').on('click', function () {
     chrome.tabs.executeScript(null, {file: "js/jquery.min.js"}, function () {
       chrome.tabs.executeScript(null, {file: "js/jquery.open-docs.js"})
+    })
+  })
+
+  $('#open_root').on('click', function () {
+    chrome.tabs.executeScript(null, {file: "js/jquery.min.js"}, function () {
+      chrome.tabs.executeScript(null, {file: "js/dics_files.js"}, function () {
+        chrome.tabs.executeScript(null, {file: "js/jquery.open-docs.js"})
+      })
     })
   })
 
@@ -27,6 +29,5 @@ $(function () {
     chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
       ext.func.cycleTabs(tabs[0], 500, true)
     });
-    // chrome.tabs.executeScript(null, {file: "js/print-tab.js"})
   })
 })

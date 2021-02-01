@@ -1,3 +1,31 @@
 body {
-    min-width: 300px;
+    min-width: 360px;
+    min-height: 140px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    overflow: auto;
+}
+button {
+    float: left;
+    width: 33%;
+    height: 140px;
+    display: inline-block;
+    margin: 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+button:hover {
+    background-color: #bada55;
+}
+button .icon {
+    text-align: center;
+}
+button .icon img {
+    width: 80%;
+    height: 80px;
+}
+button small {
+    height: 2em;
 }

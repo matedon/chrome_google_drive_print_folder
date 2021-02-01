@@ -3,7 +3,7 @@
   var timer
 
   var func = {
-    nextTab: function (doPrint) {
+    nextTab: function () {
       chrome.tabs.query({currentWindow: true}, function (tabs) {
         // Sort tabs according to their index in the window.
         // tabs.sort((a, b) => { return a.index - b.index; });
@@ -18,20 +18,18 @@
         }
         chrome.tabs.update(tabs[newIndex].id, {active: true, highlighted: true})
         _activeTabId = tabs[newIndex].id;
-        if (doPrint) {
-          setTimeout(function () {
-            chrome.tabs.executeScript(_activeTabId, {code: 'window.print();'})
-          }, 10)
-        }
       });
     },
     clearCycle: function () {
       clearInterval(timer)
     },
     cycleTabs: function (tab, interval, doPrint) {
-      // alert(tab.id)
+      var index = 0
       timer = setInterval(function () {
-        func.nextTab(doPrint)
+        if (doPrint) {
+          chrome.tabs.executeScript(_activeTabId, {code: 'setTimeout(function() { window.print() }, 1000)'})
+        }
+        func.nextTab()
       }, interval)
     }
   }
