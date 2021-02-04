@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "version": "0.992",
-    "name": "Google Drive Print Folder",
+    "version": "0.993a",
+    "name": "gDrivePrint - Google Drive Print Folder",
     "description": "Google Drive's missing feature to print all documents in one folder!",
     "browser_action": {
         "default_icon": "icon.png",

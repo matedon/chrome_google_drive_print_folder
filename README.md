@@ -1,11 +1,13 @@
-# Chromium Extensions for Google Drive
+# gDrivePrint
+### Google Drive Print Folder
+
 This extension is good for:
 * Open more documents at once in a Google Drive Folder
 * Invoke Print dialog on all opened tabs
 
 This extension doesn't use Google API just css selectors.
 
-## Sources
+### Sources
 
 * Button svg icons are Font Awesome Free icons (c) https://fontawesome.com/
 * Background scripts are using jQuery v3.3.1 minified https://jquery.com/
