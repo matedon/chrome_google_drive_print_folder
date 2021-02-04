@@ -1,7 +1,7 @@
 window.dics_files = [
   {
     "symbol": "en",
-    "text": "Folder"
+    "text": "files"
   },
   {
     "symbol": "ar",
