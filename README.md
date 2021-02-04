@@ -1,7 +1,7 @@
 # gDrivePrint
 ### Google Drive Print Folder
 
-This extension is good for:
+This Google Chrome Extension is good for:
 * Open more documents at once in a Google Drive Folder
 * Invoke Print dialog on all opened tabs
 
